@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		8205CB1226917B25003F2F81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8205CB1126917B25003F2F81 /* AppDelegate.swift */; };
 		8205CB1426917B25003F2F81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8205CB1326917B25003F2F81 /* SceneDelegate.swift */; };
-		8205CB1626917B25003F2F81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8205CB1526917B25003F2F81 /* ViewController.swift */; };
-		8205CB1926917B25003F2F81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8205CB1726917B25003F2F81 /* Main.storyboard */; };
 		8205CB1B26917B2A003F2F81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8205CB1A26917B2A003F2F81 /* Assets.xcassets */; };
 		8205CB1E26917B2A003F2F81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8205CB1C26917B2A003F2F81 /* LaunchScreen.storyboard */; };
+		8205CB2B26917CEC003F2F81 /* TimerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8205CB2A26917CEC003F2F81 /* TimerTableViewController.swift */; };
+		8205CB2E26917DDF003F2F81 /* TImerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8205CB2D26917DDF003F2F81 /* TImerInfo.swift */; };
+		8205CB3026917F06003F2F81 /* InfoTimerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8205CB2F26917F06003F2F81 /* InfoTimerCell.swift */; };
+		8205CB3226917F29003F2F81 /* TimerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8205CB3126917F29003F2F81 /* TimerCell.swift */; };
+		8205CB3626921E95003F2F81 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8205CB3526921E95003F2F81 /* Alerts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8205CB0E26917B25003F2F81 /* MultiTImer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiTImer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8205CB1126917B25003F2F81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8205CB1326917B25003F2F81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8205CB1526917B25003F2F81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8205CB1826917B25003F2F81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8205CB1A26917B2A003F2F81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8205CB1D26917B2A003F2F81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8205CB1F26917B2A003F2F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8205CB2A26917CEC003F2F81 /* TimerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerTableViewController.swift; sourceTree = "<group>"; };
+		8205CB2D26917DDF003F2F81 /* TImerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TImerInfo.swift; sourceTree = "<group>"; };
+		8205CB2F26917F06003F2F81 /* InfoTimerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTimerCell.swift; sourceTree = "<group>"; };
+		8205CB3126917F29003F2F81 /* TimerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCell.swift; sourceTree = "<group>"; };
+		8205CB3526921E95003F2F81 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,66 @@
 		8205CB1026917B25003F2F81 /* MultiTImer */ = {
 			isa = PBXGroup;
 			children = (
+				8205CB2526917B32003F2F81 /* Application */,
+				8205CB3326921E5B003F2F81 /* Extentions */,
+				8205CB2C26917DCA003F2F81 /* Model */,
+				8205CB2726917B6A003F2F81 /* View */,
+				8205CB2626917B59003F2F81 /* SupportingFiles */,
+			);
+			path = MultiTImer;
+			sourceTree = "<group>";
+		};
+		8205CB2526917B32003F2F81 /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				8205CB1126917B25003F2F81 /* AppDelegate.swift */,
 				8205CB1326917B25003F2F81 /* SceneDelegate.swift */,
-				8205CB1526917B25003F2F81 /* ViewController.swift */,
-				8205CB1726917B25003F2F81 /* Main.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8205CB2626917B59003F2F81 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				8205CB1A26917B2A003F2F81 /* Assets.xcassets */,
 				8205CB1C26917B2A003F2F81 /* LaunchScreen.storyboard */,
 				8205CB1F26917B2A003F2F81 /* Info.plist */,
 			);
-			path = MultiTImer;
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		8205CB2726917B6A003F2F81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8205CB2A26917CEC003F2F81 /* TimerTableViewController.swift */,
+				8205CB2F26917F06003F2F81 /* InfoTimerCell.swift */,
+				8205CB3126917F29003F2F81 /* TimerCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8205CB2C26917DCA003F2F81 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8205CB2D26917DDF003F2F81 /* TImerInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8205CB3326921E5B003F2F81 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				8205CB3426921E69003F2F81 /* UITableViewController */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		8205CB3426921E69003F2F81 /* UITableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8205CB3526921E95003F2F81 /* Alerts.swift */,
+			);
+			path = UITableViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +183,6 @@
 			files = (
 				8205CB1E26917B2A003F2F81 /* LaunchScreen.storyboard in Resources */,
 				8205CB1B26917B2A003F2F81 /* Assets.xcassets in Resources */,
-				8205CB1926917B25003F2F81 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +193,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8205CB1626917B25003F2F81 /* ViewController.swift in Sources */,
+				8205CB3026917F06003F2F81 /* InfoTimerCell.swift in Sources */,
+				8205CB2B26917CEC003F2F81 /* TimerTableViewController.swift in Sources */,
 				8205CB1226917B25003F2F81 /* AppDelegate.swift in Sources */,
 				8205CB1426917B25003F2F81 /* SceneDelegate.swift in Sources */,
+				8205CB3626921E95003F2F81 /* Alerts.swift in Sources */,
+				8205CB2E26917DDF003F2F81 /* TImerInfo.swift in Sources */,
+				8205CB3226917F29003F2F81 /* TimerCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8205CB1726917B25003F2F81 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8205CB1826917B25003F2F81 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8205CB1C26917B2A003F2F81 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,7 +340,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U5C93MBV7Q;
-				INFOPLIST_FILE = MultiTImer/Info.plist;
+				INFOPLIST_FILE = MultiTImer/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +348,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Ivan.MultiTImer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +359,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U5C93MBV7Q;
-				INFOPLIST_FILE = MultiTImer/Info.plist;
+				INFOPLIST_FILE = MultiTImer/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Ivan.MultiTImer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
